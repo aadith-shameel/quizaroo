@@ -18,7 +18,7 @@ function Login() {
             "Password": password
         }
 
-        axios.post("https://6nrq1tseba.execute-api.us-east-1.amazonaws.com/prod", loginData)
+        axios.post("https://mlrz42awva.execute-api.us-east-1.amazonaws.com/prod", loginData)
         .then(response => {
             if(response.data.status === 'success') {
                 alert("Login Successful! Good Luck on the Game!")
