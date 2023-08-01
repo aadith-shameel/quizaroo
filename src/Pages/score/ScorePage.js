@@ -17,7 +17,7 @@ function Score() {
         }
 
         try {
-            const response = axios.post('https://ar4gv7c0cb.execute-api.us-east-1.amazonaws.com/prod', saveData);
+            const response = axios.post('https://am0p5au9a6.execute-api.us-east-1.amazonaws.com/prod', saveData);
         } catch (error) {
             console.error(error);
         }
