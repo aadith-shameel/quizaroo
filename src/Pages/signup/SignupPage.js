@@ -20,7 +20,7 @@ function SignUp() {
             "Password": password
         }
 
-        axios.post("https://wcjlqzwloc.execute-api.us-east-1.amazonaws.com/prod", SignupData)
+        axios.post("https://lcr79rqbu1.execute-api.us-east-1.amazonaws.com/prod", SignupData)
         .then(response => {
             alert("Sign Up Successful. Please Log In with the created account.")
             navigate('/login')

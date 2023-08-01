@@ -16,7 +16,7 @@ function Quiz() {
 
     const getQuizData = async () => {
         try {
-            const response = await axios.post('https://iiofwkaddk.execute-api.us-east-1.amazonaws.com/prod', {"QN": questionNumber});
+            const response = await axios.post('https://l8fit14xkh.execute-api.us-east-1.amazonaws.com/prod', {"QN": questionNumber});
             const data = response.data;
             setQuestion(data.Question)
             setAnswer(data.Answer)
@@ -52,7 +52,7 @@ function Quiz() {
         }
 
         try {
-            const response = axios.post('https://8eluugtgc8.execute-api.us-east-1.amazonaws.com/prod', saveData);
+            const response = axios.post('https://cg0fba4wm9.execute-api.us-east-1.amazonaws.com/prod', saveData);
             navigate('/login');
         } catch (error) {
             console.error(error);
@@ -61,7 +61,7 @@ function Quiz() {
 
     const fetchLastSave = async () => {
         try {
-            const response = await axios.post('https://9mdg9775t0.execute-api.us-east-1.amazonaws.com/prod', {'Email': userEmail})
+            const response = await axios.post('https://9t1c9tl378.execute-api.us-east-1.amazonaws.com/prod', {'Email': userEmail})
             setScore(response.data.LastScore);
             setQuestionNumber(response.data.LastQuestion);
         } catch (error) {
